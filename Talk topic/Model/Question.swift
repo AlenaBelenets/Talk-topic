@@ -18,12 +18,12 @@ struct Question {
             answers: [
                 Answer(title: "Business", type: .business),
                 Answer(title: "Romantic", type: .romantic),
-                Answer(title: "Stranger", type: .stranger)
+                Answer(title: "First meet", type: .stranger)
             ]
         ),
          Question(
             title: "What topic of conversation do you prefer?",
-            type: .single,
+            type: .multiple,
             answers: [
                 Answer(title: "Joke", type: .business),
                 Answer(title: "Introduce yourself", type: .romantic),
@@ -31,17 +31,8 @@ struct Question {
             ]
          ),
          Question(
-            title: "What topic of conversation do you prefer?",
-            type: .single,
-            answers: [
-                Answer(title: "Joke", type: .business),
-                Answer(title: "Compliment", type: .romantic),
-                Answer(title: "Small talk", type: .stranger)
-            ]
-         ),
-         Question(
             title: "Do you like to talk about yourself?",
-            type: .single,
+            type: .ranged,
             answers: [
                 Answer(title: "I don't like", type: .business),
                 Answer(title: "I take it easy", type: .stranger),
