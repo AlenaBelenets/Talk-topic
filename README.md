@@ -1,6 +1,6 @@
-# Talk-topic
+# Talk Topic
 
-## helps to choose a topic for a small conversation depending on the situation
+## Helps to choose a topic for a small conversation depending on the situation
 
 ![Simulator Screen Shot - iPhone 14 Pro - 2022-11-15 at 10 25 26](https://user-images.githubusercontent.com/98764544/201865605-4391fc27-cb2d-4ada-906e-45cfadafb3f2.png)
 ![Simulator Screen Shot - iPhone 14 Pro - 2022-11-15 at 10 26 56](https://user-images.githubusercontent.com/98764544/201865618-7590a92c-c6a9-4b6e-aa29-233271ab7ea3.png)
