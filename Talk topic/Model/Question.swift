@@ -54,13 +54,15 @@ struct Answer {
     let type: Relationships
 }
 
-enum Relationships {
-    case stranger, business, romantic
+enum Relationships: String {
+    case stranger = "🙃"
+    case business = "🥸"
+    case romantic = "🥰"
 
     var definition: String {
         switch self {
         case .business:
-            return "Hobbies and interests. Do you like sports, reading, drawing? Tell me about it."
+            return "Hobbies and interests. Do you like sports, reading, drawing? Tell about it."
         case .romantic:
             return "Tell about your adventures and funny stories. Each of us has a couple of stories that can make a crowd of people laugh. Remember and tell!"
         case .stranger:

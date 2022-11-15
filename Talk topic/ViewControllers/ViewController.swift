@@ -11,13 +11,13 @@ class ViewController: UIViewController {
 
     // MARK: - Private Properties
     private let primaryColor = UIColor(
-        red: 56/255,
-        green: 17623/255,
+        red: 156/255,
+        green: 123/255,
         blue: 123/255,
         alpha: 1
     )
     private let secondaryColor = UIColor(
-        red: 69/255,
+        red: 189/255,
         green: 55/255,
         blue: 255/255,
         alpha: 0.75

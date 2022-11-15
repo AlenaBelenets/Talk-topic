@@ -29,6 +29,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet var singleButtons: [UIButton]!
     @IBOutlet var rangedLabels: [UILabel]!
 
+    // MARK: - Private Properties
     private let questions = Question.getQuestion()
     private var answersChosen: [Answer] = []
     private var questionIndex = 0
@@ -38,10 +39,15 @@ class QuestionViewController: UIViewController {
 
 
 
-// MARK: - viewDidLoad
+// MARK: - Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultViewController else { return}
+        resultVC.answers = answersChosen
     }
     
 // MARK: - IBActions
