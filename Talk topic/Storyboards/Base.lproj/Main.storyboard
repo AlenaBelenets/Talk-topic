@@ -312,6 +312,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="vs8-kk-JCc">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="qQT-0u-YSg">
+                            <color key="tintColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="doneButtonPressed:" destination="PeG-ma-OBI" id="9Gj-B2-jpU"/>
                             </connections>
