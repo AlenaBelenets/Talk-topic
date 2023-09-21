@@ -6,30 +6,55 @@
 //
 
 import XCTest
+@testable import Talk_topic
 
 final class QuestionVCTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var sut: QuestionViewController!
+    var items: [String] = []
+
+    override func setUp()  {
+        super.setUp()
+        sut = QuestionViewController()
+
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown()  {
+        sut = nil
+        super.tearDown()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
+//    func testPrepareShouldBeReturnResultViewControllerForSegue() {
+//        что дано
+//        sut.setVolume(to: -1)
+//  when
+//        let volume = sut.volume
+//        then
+//        XCTAssert(volume == 0, "Lowest volume should be equal zero"
+//        первое это условие которое должно соблюстись, второе это сообщение об ошибке
+//    }
+//    func testSingleButtonAnswerPressedButtonNotNil() {
+//        let button = UIButton()
+//        sut.singleButtonAnswerPressed(button)
+//        XCTAssertNil(button)
+//
+//    }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
+//    func testRangedButtonAnswerPressedAndAppendedAnswer() {
+//        sut.rangedButtonAnswerPressed()
+//
+//        let buttonIndex = button
+//
+//        XCTAssertNotNil(buttonIndex)
+//
+//    }
+
+    func testPerformanceExample()  {
         measure {
-            // Put the code you want to measure the time of here.
+
         }
     }
+
+
 
 }
